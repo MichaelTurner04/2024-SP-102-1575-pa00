@@ -1,5 +1,7 @@
-#ifndef COLLATZ_H
+  #ifndef COLLATZ_H
 #define COLLATZ_H
+using namespace std;
+#include <iostream>
 
 /*
 Take an integer as parameter and perform ONE STEP of the Collatz function
@@ -12,6 +14,12 @@ void collatz_one_step(int &num) {
   /*
   Write your code below to complete the function
   */
+    if(num %2 == 0){
+      num /=2;
+    }
+    else{
+      num = (num*3)+1;
+    }
 }
 
 
@@ -23,6 +31,18 @@ int collatz_total_stopping_time(int num) {
   /*
   Write your code below to complete the function
   */
+ if (num <=1){
+  cout << "number is 0"<< endl;
+  return num;
+ }
+ int count=0;
+ while (num >1){
+  collatz_one_step(num);
+  cout << "-> "<<num;
+  count++;
+ }
+ cout<< "Total iterations to complete: "<< count << endl;
+ return count;
 }
 
 #endif
