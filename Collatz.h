@@ -14,11 +14,11 @@ void collatz_one_step(int &num) {
   /*
   Write your code below to complete the function
   */
-    if(num % 2 == 0) {
-      num /= 2;
-    } else {
+  if(num % 2 == 0) {
+    num /= 2;
+  } else {
       num = (num * 3) + 1;
-    }
+  }
 }
 
 /*
