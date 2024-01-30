@@ -13,7 +13,7 @@ int main() {
   int k;
   int num;
   cin>> k;
-  for (k; k--; k<0){
+  for (int i=0; i<k; i++){
   cin >> num;
   collatz_total_stopping_time(num);
   }
