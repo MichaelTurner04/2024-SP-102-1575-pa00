@@ -28,7 +28,7 @@ Return the number of steps of the Collatz function needed to reduce num to 1
 If num is already <= 1, return a value of 0
 */
 int collatz_total_stopping_time(int num) {
-  /*
+  /*//
   Write your code below to complete the function
   */
  if (num <=1){
@@ -38,10 +38,10 @@ int collatz_total_stopping_time(int num) {
  int count=0;
  while (num >1){
   collatz_one_step(num);
-  cout << "-> "<<num;
+  //cout << "-> "<<num;
   count++;
  }
- cout<< "Total iterations to complete: "<< count << endl;
+ cout<< endl << "Total stopping time of "<< count << endl;
  return count;
 }
 

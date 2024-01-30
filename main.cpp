@@ -11,7 +11,6 @@ int main() {
   Type command "./grade.sh" in the terminal to check your progress
   */
   int num;
-  cout<< "Enter collatz number: ";
   cin >> num;
   collatz_total_stopping_time(num);
   return 0;
