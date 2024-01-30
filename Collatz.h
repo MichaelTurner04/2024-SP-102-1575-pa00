@@ -14,14 +14,12 @@ void collatz_one_step(int &num) {
   /*
   Write your code below to complete the function
   */
-    if(num %2 == 0){
-      num /=2;
-    }
-    else{
-      num = (num*3)+1;
+    if(num % 2 == 0) {
+      num /= 2;
+    } else {
+      num = (num * 3) + 1;
     }
 }
-
 
 /*
 Return the number of steps of the Collatz function needed to reduce num to 1
