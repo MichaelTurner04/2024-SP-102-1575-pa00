@@ -29,18 +29,18 @@ int collatz_total_stopping_time(int num) {
   /*//
   Write your code below to complete the function
   */
- if (num <=1){
-  //cout << "total stopping time of 0"<< endl;
-  return num;
- }
- int count=0;
- while (num >1){
-  collatz_one_step(num);
-  //cout << "-> "<<num;
-  count++;
- }
- //cout<< endl << "Total stopping time of "<< count << endl;
- return count;
+  if (num <= 1) {
+    // cout << "total stopping time of 0"<< endl;
+    return num;
+  }
+  int count = 0;
+  while (num > 1) {
+    collatz_one_step(num);
+    // cout << "-> "<<num;
+    count++;
+  }
+  // cout<< endl << "Total stopping time of "<< count << endl;
+  return count;
 }
 
 #endif
