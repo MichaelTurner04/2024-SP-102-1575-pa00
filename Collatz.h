@@ -1,4 +1,4 @@
-  #ifndef COLLATZ_H
+#ifndef COLLATZ_H
 #define COLLATZ_H
 using namespace std;
 #include <iostream>
@@ -14,10 +14,10 @@ void collatz_one_step(int &num) {
   /*
   Write your code below to complete the function
   */
-  if(num % 2 == 0) {
+  if (num % 2 == 0) {
     num /= 2;
   } else {
-      num = (num * 3) + 1;
+    num = (num * 3) + 1;
   }
 }
 
