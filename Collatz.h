@@ -29,7 +29,7 @@ int collatz_total_stopping_time(int num) {
   /*//
   Write your code below to complete the function
   */
-  if (num <= 1) {
+  if (num == 0) {
     // cout << "total stopping time of 0"<< endl;
     return num;
   }
