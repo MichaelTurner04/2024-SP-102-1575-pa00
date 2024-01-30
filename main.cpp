@@ -10,8 +10,12 @@ int main() {
   Match formatting to the sample I/O provided
   Type command "./grade.sh" in the terminal to check your progress
   */
+  int k;
   int num;
+  cin>> k;
+  for (k; k--; k<0){
   cin >> num;
   collatz_total_stopping_time(num);
+  }
   return 0;
 }
