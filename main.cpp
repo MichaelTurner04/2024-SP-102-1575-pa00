@@ -12,10 +12,11 @@ int main() {
   */
   int k;
   int num;
-  cin>> k;
-  for (int i=0; i<k; i++){
-  cin >> num;
-  cout << "Total stopping time of "<< collatz_total_stopping_time(num) << endl;
+  cin >> k;
+  for (int i = 0; i < k; i++) {
+    cin >> num;
+    cout << "Total stopping time of " << collatz_total_stopping_time(num)
+         << endl;
   }
   return 0;
 }
